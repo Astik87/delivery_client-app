@@ -1,0 +1,11 @@
+import React from 'react';
+import { render } from '@testing-library/react-native';
+
+import HomeScreen from './HomeScreen';
+
+describe('<HomeScreen />', () => {
+  it('has 1 child', async () => {
+    const tree = await render(<HomeScreen />).getByRole('text');
+    expect(tree).toBeDefined();
+  });
+});
