@@ -1,11 +1,12 @@
 {
   "expo": {
-    "name": "expo-start-template",
-    "slug": "expo-start-template",
+    "name": "client-app",
+    "slug": "client-app",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "myapp",
     "experiments": {
       "tsconfigPaths": true
     },
@@ -27,7 +28,11 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
